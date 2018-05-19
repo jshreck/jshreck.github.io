@@ -1,14 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Julia</title>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <script type="text/javascript" src="./assets/javascript.js"></script>
+
 </head>
+
 <body>
-    <p>
-        Hello World!
-    </p>
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper z-depth-1">
+                <a href="#!" class="brand-logo">Julia Shreckhise</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#about-section">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-section">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="#about-section">About</a>
+        </li>
+        <li>
+            <a href="#portfolio-section">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact-section">Contact</a>
+        </li>
+    </ul>
+
+
+    <div class="container row main">
+        <div class="col s12 z-depth-3">
+            <!-- ABOUT -->
+            <div class="row">
+                <a id="about-section">
+                    <h4 class=section-heading>About Me</h4>
+                </a>
+
+                <div class="col s10 offset-s1">
+                    <div class="card-panel grey darken-3 z-depth-3" id="about">
+                        <div class="row valign-wrapper">
+                            <div class="col s12 m8">
+                                <img class="responsive-img circle z-depth-5" id="me" src="./assets/images/me.jpg">
+                            </div>
+                            <div class="col sm12 m8">
+                                <span class="white-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae pariatur sunt similique omnis quis totam animi atque ipsum
+                                    fugiat fuga vitae impedit obcaecati deserunt quidem eaque voluptatum illum, sed nihil
+                                    voluptate quisquam vero nostrum enim eligendi. Nemo laudantium perferendis, voluptatum
+                                    ratione, velit earum, alias repudiandae numquam cupiditate corporis minus ipsum?
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- PORTFOLIO -->
+            <div class="row">
+                <a id="portfolio-section">
+                    <h4 class="section-heading">Portfolio</h4>
+                </a>
+                <div class="col s12">
+                    <div class="carousel z-depth-3" id="portfolio">
+                        <div class="carousel-item">
+                            <div class="card grey darken-3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="./assets/images/harry-potter-hangman.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator white-text">Harry Potter Hangman
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Harry Potter Hangman
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <p>A classic hangman game with a Harry potter twist.</p>
+                                    <p>
+                                        <a href="https://jshreck.github.io/Hangman-Game/" target="_blank">Play the game</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://github.com/jshreck/Hangman-Game" target="_blank">See it in GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card grey darken-3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="./assets/images/burger.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator white-text">Eat-Da-Burger
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Eat-Da-Burger
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <p>Description</p>
+                                    <p>
+                                        <a href="https://pure-forest-24334.herokuapp.com/" target="_blank">See it in action</a>
+                                    </p>
+                                    <p>
+                                        <a href="https://github.com/jshreck/burger" target="_blank">See it in GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card grey darken-3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="http://via.placeholder.com/200x200">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator white-text">Title
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Title
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <p>Description</p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in action</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card gery darken-3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="http://via.placeholder.com/200x200">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator white-text">Title
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Title
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <p>Description</p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in action</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card grey darken-3">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="http://via.placeholder.com/200x200">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator white-text">Title
+                                        <i class="material-icons right">more_vert</i>
+                                    </span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Title
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                    <p>Description</p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in action</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" target="_blank">See it in GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- CONTACT -->
+            <div class="row">
+                <a id="contact-section">
+                    <h4 class=section-heading>Contact</h4>
+                </a>
+                <form class="col s10 offset-s1 z-depth-3 grey darken-3" id="contact-form">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="name" type="text" class="validate white-text">
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="email" type="email" class="validate white-text">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea" class="materialize-textarea white-text"></textarea>
+                            <label for="textarea">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <button class="btn waves-effect waves-light" id="submit" type="submit" name="action">Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="container center-align">
+            <a href="https://linkedin.com/in/juliashreckhise">
+                <img src="./assets/images/linkedin.png" height="50" width="50" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/jshreck">
+                <img src="./assets/images/github.png" height="50" width="50" alt="GitHub">
+            </a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2018 Julia Shreckhise
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
