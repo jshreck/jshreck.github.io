@@ -51,6 +51,19 @@ hr {
     background: #EC6F75 ;
 }
 
+.card-image{
+    height: 200px; 
+    overflow: hidden;
+}
+
+.portfolio-link {
+    background: rgb(230, 146, 150);
+    color: black;
+    font-size: 25px;
+    border-radius: 100%;
+    margin: 0px 10px;
+}
+
 .card .card-content {
     padding: 10px;
 }
