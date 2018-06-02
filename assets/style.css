@@ -94,3 +94,16 @@ hr {
      box-shadow: 0 1px 0 0 #EC6F75!important;
     }
 
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 601px) {
+    .container {
+    width: 90%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+    width: 90%;
+    }
+}
